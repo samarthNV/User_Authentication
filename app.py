@@ -94,7 +94,7 @@ def dashboard():
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('login'))
+    return render_template('home.html')
 
 
 @ app.route('/register', methods=['GET', 'POST'])
